@@ -19,7 +19,9 @@
   },
   "homepage": "https://github.com/Valaeraa/fylo-landing-page#readme",
   "devDependencies": {
+    "autoprefixer": "^9.0.0",
     "parcel-bundler": "^1.12.5",
+    "postcss": "^7.0.0",
     "sass": "^1.32.8"
   }
 }
