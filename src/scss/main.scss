@@ -1,9 +1,168 @@
 @use './base/reset';
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
+
+// todo - make feature imgs a bit smaller
+// todo - make variables for colors, line height, font size, etc
+// todo - add media query to grid mobile 1 column, desktop 2
+// todo - move hero section to header
+// todo - separate scss into additional files
+// todo - add right arrow icon to the btn-info
+
+$clr-neutral: hsl(0, 0%, 100%);
 
 body {
   font-family: "Open Sans", sans-serif;
+  // background: hsl(217, 28%, 15%);
   background: hsl(218, 28%, 13%);
-  color: white;
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 14px;
+  // min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+}
+
+section {
+  // padding: 5em 0;
+}
+
+img {
+  max-width: 100%;
+  // object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+header {
+  background: hsl(217, 28%, 15%);
+
+  // min-height: 10vh;
+  // border: 1px solid hsl(0, 0%, 100%);
+  // width: 100%;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 10vh;
+  // border: 1px solid hsl(0, 0%, 100%);
+}
+
+.logo {
+  display: inline-block;
+  width: 90px;
+  margin: auto 0;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  // border: 1px solid hsl(0, 0%, 100%);
+}
+
+.nav-item {
+  margin: 0 1.5em;
+}
+
+.nav-item:last-child {
+  margin-right: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: hsl(0, 0%, 90%);
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  background: hsl(217, 28%, 15%);
+  // background: url("../images/bg-curvy-mobile.svg") bottom / 130% auto no-repeat;
+  padding-top: 20px;
+  padding-bottom: 8em;
+  // margin-bottom: 8rem;
+  // position: relative;
+  // height: 100vh;
+}
+
+.hero-title {
+  line-height: 140%;
+  font-family: "Raleway", sans-serif;
+}
+
+.copy-text {
+  line-height: 150%;
+  color: hsl(0, 0%, 90%);
+  max-width: 60ch;
+  margin: 1em auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  font-family: "Raleway", sans-serif;
+  padding: 1.5em 7em;
+  font-weight: bold;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: hsl(0, 0%, 100%);
+  border: none;
+  border-radius: 2em;
+  margin: 1.5em 0;
+}
+
+.btn-info {
+  // display: inline-block;
+  color: hsl(176, 68%, 64%);
+  text-decoration: none;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  padding-bottom: 0.3em;
+  // border-spacing: 50rem 500rem;
+}
+
+.background-mobile {
+  // display: block;
+  position: absolute;
+  // object-fit: cover;
+  // width: 100%;
+  left: 0;
+  bottom: 0;
+  z-index: -10;
+}
+
+.features {
+}
+
+.grid-container {
+  display: grid;
+  gap: 8em 2em;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card-title {
+  font-family: "Raleway", sans-serif;
+}
+
+.productivity-intro {
+  text-align: left;
+}
+
+.productivity-text {
+  line-height: 150%;
+  color: hsl(0, 0%, 90%);
 }
