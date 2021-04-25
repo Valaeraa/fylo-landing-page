@@ -52,7 +52,9 @@
     <section class="features">
       <div class="container grid-container">
         <div class="card">
-          <img src="./images/icon-access-anywhere.svg" alt="access anywhere icon">
+          <div class="features-img access-img">
+            <!-- <img src="./images/icon-access-anywhere.svg" alt="access anywhere icon"> -->
+          </div>
           <h2 class="card-title">Access your files, anywhere</h2>
           <p class="copy-text">
             The ability to use a smartphone, tablet, or computer to access your account means your 
@@ -61,7 +63,9 @@
         </div>
 
         <div class="card">
-          <img src="./images/icon-security.svg" alt="security anywhere icon">
+          <div class="features-img security-img">
+            <!-- <img class="img" src="./images/icon-security.svg" alt="security anywhere icon"> -->
+          </div>
           <h2 class="card-title">Security you can trust</h2>
           <p class="copy-text">
             2-factor authentication and user-controlled encryption are just a couple of the security 
@@ -70,7 +74,9 @@
         </div>
 
         <div class="card">
-          <img src="./images/icon-collaboration.svg" alt="collaboration icon">
+          <div class="features-img collaboration-img">
+            <!-- <img src="./images/icon-collaboration.svg" alt="collaboration icon"> -->
+          </div>
           <h2 class="card-title">Real-time collaboration</h2>
           <p class="copy-text">
             Securely share files and folders with friends, family and colleagues for live collaboration. 
@@ -79,7 +85,9 @@
         </div>
 
         <div class="card">
-          <img src="./images/icon-any-file.svg" alt="any file icon">
+          <div class="features-img file-img">
+            <!-- <img src="./images/icon-any-file.svg" alt="any file icon"> -->
+          </div>
           <h2 class="card-title">Store any type of file</h2>
           <p class="copy-text">
             Whether you're sharing holidays photos or work documents, Fylo has you covered allowing for all 
@@ -91,7 +99,7 @@
     </section>
 
     <section class="productivity">
-      <div class="container">
+      <div class="container grid">
         <img src="./images/illustration-stay-productive.png" alt="stay productive image">
 
         <div class="productivity-intro">
@@ -112,7 +120,7 @@
     <section class="testimonials">
       <div class="container grid">
         
-        <div class="testimonal-card">
+        <div class="testimonal-card quote">
           <p class="testimonial-text">
             Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
             become a well-oiled collaboration machine.
@@ -171,9 +179,15 @@
             It only takes a minute to sign up and our free starter tier is extremely generous. If you have any 
             questions, our support team would be happy to help you.
           </p>
-
-          <input type="text" name="" id="" placeholder="email@example.com">
-          <button class="btn-primary">Get Started For Free</button>
+        <form class="form">
+          <div class="form-input">
+            <input type="text" name="" id="" placeholder="email@example.com">
+          </div>
+          <div class="form-button">
+            <button type="submit" class="btn-primary">Get Started For Free</button>
+          </div>
+        </form>
+          
         </div>
       </div>
     </section>
@@ -184,44 +198,44 @@
       <img class="footer-logo" src="./images/logo.svg" alt="logo">
 
       <div class="footer-grid">
+
         <div class="info">
-          <!-- icon -->
           <div class="d-flex">
-            <h4 class="fas fa-map-marker-alt"></h4>
-            <p class="copy-text">
+            <h4 class="fas fa-map-marker-alt "></h4>
+            <p class="copy-text tm-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
               dolore magna aliqua
             </p>
           </div>
   
-          <div >
-            <div class="d-flex">
-              <h4><i class="fas fa-phone-alt"></i></h4>
-              <p>+1-543-123-4567</p>
+          <div>
+            <div class="d-flex info-margin">
+              <h4 class="tm-0"><i class="fas fa-phone-alt"></i></h4>
+              <p class="tm-0">+1-543-123-4567</p>
             </div>
 
             <div class="d-flex">
-              <h4><i class="fas fa-envelope"></i></h4>
-              <p>example@fylo.com</p>
+              <h4 class="tm-0"><i class="fas fa-envelope"></i></h4>
+              <p class="tm-0">example@fylo.com</p>
             </div>
           </div>
         </div>
   
-        <div class="about">
-          <li class="footer-list"><a class="footer-link" href="#">About Us</a></li>
+        <div class="wrapper">
+          <li class="footer-list tm-0"><a class="footer-link" href="#">About Us</a></li>
           <li class="footer-list"><a class="footer-link" href="#">Jobs</a></li>
           <li class="footer-list"><a class="footer-link" href="#">Press</a></li>
           <li class="footer-list"><a class="footer-link" href="#">Blog</a></li>
         </div>
-  
-        <div class="contact">
-          <li class="footer-list"><a class="footer-link" href="#">Contact Us</a></li>
+    
+        <div class="wrapper">
+          <li class="footer-list tm-0"><a class="footer-link" href="#">Contact Us</a></li>
           <li class="footer-list"><a class="footer-link" href="#">Terms</a></li>
           <li class="footer-list"><a class="footer-link" href="#">Privacy</a></li>
         </div>
   
         <div class="icons">
-          <a class="icon" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="icon tm-0" href="#"><i class="fab fa-facebook-f"></i></a>
           <a class="icon" href="#"><i class="fab fa-twitter"></i></a>
           <a class="icon" href="#"><i class="fab fa-instagram"></i></a>
         </div>
