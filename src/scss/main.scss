@@ -29,7 +29,7 @@ body {
 }
 
 section {
-  padding: 2em 0;
+  padding: 4em 0;
 }
 
 img {
@@ -127,8 +127,8 @@ input {
 .btn-primary {
   // display: inline-block;
   font-family: "Raleway", sans-serif;
-  padding: 1em 2em;
-  width: 90%;
+  padding: 1em 6em;
+  // width: 90%;
   min-width: 23ch;
   font-weight: bold;
   background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
@@ -150,6 +150,10 @@ input {
   border-bottom: 1px solid hsl(176, 68%, 64%);
   padding-bottom: 0.3em;
   // border-spacing: 50rem 500rem;
+}
+
+.btn-sign-up {
+  width: 90%;
 }
 
 .background-mobile {
@@ -200,11 +204,15 @@ input {
   display: grid;
   gap: 4em 2em;
 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  // grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+  grid-template-columns: repeat(1, 1fr);
 }
 
 .card-title {
   font-family: "Raleway", sans-serif;
+}
+
+.productivity-container {
 }
 
 .productivity-intro {
@@ -220,7 +228,7 @@ input {
   display: grid;
   gap: 2em;
 
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
 }
 
 .quote {
@@ -294,7 +302,7 @@ input {
   left: 50%;
   transform: translate(-50%, -15%);
   width: 90%;
-  // max-width: 55vw;
+  max-width: 850px;
   margin: 0 auto;
   background: hsl(217, 28%, 15%);
   padding: 2em 2em;
@@ -392,6 +400,31 @@ input {
 }
 
 @media all and (min-width: 768px) {
+  // .container {
+  //   max-width: 80%;
+  // }
+
+  .hero {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .grid-container {
+    // grid-template-columns: repeat(2, minmax(324px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .productivity-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .productivity-container > * {
+    width: 100%;
+  }
+
   .footer-grid {
     flex-direction: row;
     // grid-template-columns: repeat(2, 1fr);
@@ -412,6 +445,10 @@ input {
     width: 30%;
   }
 
+  .btn-sign-up {
+    padding: 1em 2em;
+  }
+
   .tm-0 {
     margin-top: 0;
   }
@@ -426,6 +463,10 @@ input {
 }
 
 @media all and (min-width: 992px) {
+  // .container {
+  //   max-width: 85%;
+  // }
+
   .footer-grid {
     // grid-template-columns: repeat(3, 2fr);
     justify-content: space-between;
